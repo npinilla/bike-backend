@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# one:
+#   free_bikes: 1
+#   used_bikes: 1
+#   minute_created: 1
+
+# two:
+#   free_bikes: 1
+#   used_bikes: 1
+#   minute_created: 1

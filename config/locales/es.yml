@@ -1,0 +1,11 @@
+es:
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 'una hora'
+        other: '%{count} horas'
+      x_minutes:
+        one: 'un minutos'
+        other: '%{count} minutos'
+      less_than_x_minutes:
+        one: 'menos de un minuto'

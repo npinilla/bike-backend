@@ -1,28 +1,37 @@
-== README
+## Descripción
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicación backend desarrollada en Rails que obtiene información sobre las estaciones de BikeSantiago desde su api http://api.citybik.es/v2/networks/bikesantiago cada 1 minuto.
 
-Things you may want to cover:
+## Componentes
+### Station.rb
+Almacena el nombre, bicicletas usadas, bicicletas libres y el tiempo de última actualización las estaciones.
 
-* Ruby version
+### SystemUsage.rb
+Almacena el total de bicicletas libres y el total de bicicletas usadas del sistema completo.
 
-* System dependencies
+### stations_controller.rb
+API que entrega toda las estaciones ordenadas alfabeticamente por nombre
 
-* Configuration
+### system_usage_controller.rb
+API que entrega información sobre el total de bicicletas usadas y total de bicicletas libres. Puede entregar la información de la última hora en intervalos de 1 minutos o del último día en intervalos de 1 hora.
 
-* Database creation
+### Gema Whenever
+Se usa para obtener la información de la api cada 1 minutos y almacenarla en la base de datos.
 
-* Database initialization
+## Como ejecutar
 
-* How to run the test suite
+1. Crear carpeta para aplicación
+  * mkdir name
+  * cd name
+  
+2. Descargar aplicación de Github
+  * git init
+  * git remote add origin https://github.com/npinilla/bike-backend.git
+  * git pull origin master
+  
+3. Ejecutar aplicación
+  * bundle install
+  * rails s
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+4. Ejecutar aplicación de frontend
+  * Instrucciones en https://github.com/npinilla/bike-frontend.git

@@ -38,5 +38,5 @@ Se usa para obtener la información de la api cada 1 minutos y almacenarla en la
 4. Ejecutar aplicación de frontend
   * Instrucciones en https://github.com/npinilla/bike-frontend.git
   
-5. Limpiar crontab
+5. Limpiar crontab al terminar de usar la aplicación
   * whenever -c
